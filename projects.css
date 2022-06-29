@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight:100;
+    align-content: center;
+}
+
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-family: 'comfortaa', cursive;
+    color: #6655ca;
+    font-size: 18px;
+}
+
+
+
+.proj-digi img {
+    height: 200px;
+    width: 400px;
+    margin-left: 40px;
+}
+
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+  
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+}
+  
+  
+  
+  
+*{
+    box-sizing : border-box;
+    
+}
+  
+body{
+    margin: 0;
+    border: 0;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(156,211,216);
+    color: white; 
+    justify-content: space-around;
+}
+  
+  
+  
+.page-title {
+    margin-left: 1px;
+    font-size: 0.5cm;
+    font-family: 'comfortaa', cursive;
+    line-height: 60px;
+    font-weight: bold;
+    color: black;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+}
+  
+  
+  
+.navbar-links  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.navbar-links li{
+    list-style: none;
+  
+}
+  
+  
+  
+  
+.navbar-links li a{
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      display:block;
+      font-family: 'comfortaa', cursive;
+  
+  
+}
+  
+  
+@keyframes mymove {
+    50% {padding-left: 25px;}
+    50% {padding-right: 25px;}
+}
+  
+.navbar-links li a:hover {
+    background-color: rgb(241,191,164);
+    border-radius: 10px;
+    transition: all 0.45s ease 0s;
+    cursor: pointer;
+    justify-content: space-between;
+    animation: mymove 4.5s infinite ease;
+} 
+  
+.menu{
+    display: none;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 20px;
+  
+}
+  
+@media all and (max-width:600px){
+    .navbar{
+      flex-direction: column;
+    }
+    .menu{
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 25px;
+    }
+  
+    .menu:hover{
+      cursor: pointer;
+    }
+  
+    .menu-line:hover{
+      background-color: #f1bfa4;
+    }
+    
+    .page-title{
+      width: 100%;
+      margin-left: 10px;
+    }
+  
+    .navbar-links{
+      display: block;
+      border-top: 2px solid white;
+      display: none;
+  
+    }
+  
+    .active{
+      display: block;
+  
+    }
+
+    .menu img{
+        width: 40px;
+        height: 40px;
+    }
+  
+}
+  
+  
+
+
+h1{
+    font-family: "comfortaa",cursive;
+    color: white;
+    font-size: xx-large;
+}
+  
+  

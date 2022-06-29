@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinuja's Projects</title>
+    <link rel="icon" type="image/x-icon" href="./resources/grad.mp4">
+    <link rel="stylesheet" href="projects.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar fixed-top " style="box-shadow: 10px 10px 10px black;" >
+      <div class="page-title" href="index2.html" style="left: 100%;">Dinuja's Blog</div>
+      <div class="navbar-links" id="navi-list">
+        <ul>
+          <li><a href="index2.html"> Home </a></li>
+          <li><a href="projects.html"> Projects </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+          
+        </ul>
+      
+      </div>
+      <div class="menu" id="toggle-button">
+        <img src="./resources/icons8-menu-rounded-48.png">
+      </div>
+    </div>
+    
+
+  </header> 
+
+  <video autoplay muted loop id="myVideo">
+    <source src="./resources/grad.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+  <p style="color: white;">Hi! Now you've reached my Projects page. Feel free to explore!</p>
+  <br/>
+
+
+
+  <h1 style="text-align: center; ">Digital Projects</h1>
+
+  <p>
+    I've made some projects digitally or by coding. I've used languages like python and scratch.
+  </p>
+
+  <div class="proj-digi">
+    <h2 style="color: white; margin-left: 100px; font-size: larger; font-family: Arial, Helvetica, sans-serif;">1. Covid Dashboard</h2>
+    <img src="./resources/cov-dsh.png" alt="Covid Dashboard">
+    <h3>This is a project I made with some of my friends. It's made by Python, collaborating with <a href="streamlit.io">Streamlit. </a> 
+      The use of this is to check Covid-19 cases or deaths in a certain country. The data is from an API called <a href="https://corona.lmao.ninja/">corona.lmao.ninja</a>
+      This data is constantly updated with data from famous cites, so this is very accurate.
+      You can check it out with this link below. It's data is uploaded to a github repository and is hosted with streamlit share.
+    </h3> 
+    </br>
+    <h3>
+      Here's the link: <a href="https://share.streamlit.io/scj1/streamlit_cov-dash">Covid Dashboard</a>
+    </h3>
+
+    </br>
+    </br>
+    </br>
+
+    <h2 style="color: white; margin-left: 100px; font-size: larger; font-family: Arial, Helvetica, sans-serif;">2. WiFi Rover</h2>
+    <img src="./resources/rovr.png">
+    <h3>
+      
+    </h3>
+
+
+
+
+
+  
+    
+  </div>
+
+  
+
+
+  
+
+  
+</body>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+    })
+
+  </script>
+
+
+</html>
