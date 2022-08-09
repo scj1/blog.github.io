@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@import url('animate.css');
+
 *{
   border-left:10px;
   
 }  
 
 body {
-  background-image: url('example_img_girl.jpg');
+  background-image: url('./resources/anback.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 th, td {
@@ -47,6 +54,8 @@ table, th, td{
 
 
 .my-info-cont img{
+  margin: auto;
+  display: block; 
   height: 225px;
   width: 225px;
   border-radius: 100%;
@@ -54,6 +63,41 @@ table, th, td{
   margin-right: auto;   
   
 }
+
+
+.my-school-cont {
+  
+  background-color: black;
+  opacity: 75%;
+  max-width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.my-school-cont p, h1 {
+  text-align: center;
+}
+
+.my-school-cont h1{
+  color: white;
+  font-size:xx-large;
+}
+
+
+.my-school-cont img{
+  margin: auto;
+  display: block;
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  
+}
+
+
+
 
 .container {
   width: 100%; /* Full width */
@@ -96,7 +140,7 @@ table, th, td{
   display: inline-block;
   width: 100%;
   height: 25px;
-  background: black;
+  background: #9cd3d8;
   border-radius: 50px;
 
 }
@@ -136,7 +180,7 @@ table, th, td{
 }
 
 
-.html {width: 90%; background-image: linear-gradient(to right,#f08e59,#f1bfa4); padding: 7.5px; border-radius: 10px;height: 40px;} /* Green */
+.html {width: 85%; background-image: linear-gradient(to right,#f08e59,#f1bfa4); padding: 7.5px; border-radius: 10px;height: 40px;} /* Green */
 .css {width: 80%;  background-image: linear-gradient(to right,#f08e59,#f1bfa4); padding:7.5px; border-radius: 10px;height: 40px;} /* Blue */
 .js {width: 65%;  background-image: linear-gradient(to right,#f08e59,#f1bfa4);; padding: 7.5px; border-radius: 10px;height: 40px;} /* Red */
 .vid {width: 75%;  background-image: linear-gradient(to right, #f08e59,#f1bfa4); padding: 7.5px; border-radius: 10px;height: 40px;} /* Dark Grey */
@@ -156,15 +200,6 @@ iframe, table{
   padding: 10px;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-
-}
 
 
 body {
@@ -194,151 +229,12 @@ body{
   border: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(156,211,216);
-  color: white; 
-  justify-content: space-around;
-}
-
-
-
-.page-title {
-  margin-left: 1px;
-  font-size: 0.5cm;
-  font-family: 'comfortaa', cursive;
-  line-height: 60px;
-  font-weight: bold;
-  color: black;
-  justify-content: space-around;
-  margin-left: 20px;
-  
-}
-
-
-
-.navbar-links  ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar-links li{
-  list-style: none;
-
-}
-
-
-
-
-.navbar-links li a{
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    display:block;
-    font-family: 'comfortaa', cursive;
-
-
-}
-
-
-@keyframes mymove {
-  50% {padding-left: 25px;}
-  50% {padding-right: 25px;}
-}
-
-.navbar-links li a:hover {
-  background-color: rgb(241,191,164);
-  border-radius: 10px;
-  transition: all 0.45s ease 0s;
-  cursor: pointer;
-  justify-content: space-between;
-  animation: mymove 4.5s infinite ease;
-} 
-
-.menu{
-  display: none;
-}
-
-
-@media all and (max-width:600px){
-  .navbar{
-    flex-direction: column;
-  }
-  .menu{
-    display: block;
-    position: absolute;
-    right: 35px;
-    top: 10px;
-    height: 10px;
-    width: 5px;
-  }
-
-  .menu:hover{
-    cursor: pointer;
-  }
-
-  .page-title{
-    width: 100%;
-    margin-left: 10px;
-  }
-
-  .navbar-links{
-    display: block;
-    border-top: 2px solid white;
-    display: none;
-
-  }
-
-  .active{
-    display: block;
-
-  }
-
-}
-
-
-
-
-body{
-  font-family: 'Comfortaa', cursive;
-}
 
 
 
 
 
 
-header, footer{
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    width : 100%;
-    color: rgb(240, 255, 255);
-
-}
-
-footer{
-  height:  100px;
-  bottom : 0px;
-
-}
-
-footer h2{
-    position : absolute;
-    left : 40%
-}
-
-footer p{
-  color : rgb(214, 214, 214);
-  position: absolute;
-  margin-top: 40px;
-  left : 42%;
-  font-family: 'comfortaa',cursive;
- 
-}
 
 .image{
   display:inline-block;

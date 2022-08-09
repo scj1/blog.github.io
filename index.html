@@ -7,47 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinuja's Blog</title>
     <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="icon" type="image/x-icon" href="./icons/dalasi.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./resources/animate.css"/>
 </head>
 
 <br>
 
 <body>
 
-  <header> 
 
 
-    <div class="navbar fixed-top " style="box-shadow: 10px 10px 10px black;" >
-      <div class="page-title" href="index.html">Dinuja's Blog</div>
-      <div class="navbar-links" id="navi-list">
-        <ul>
-          <li><a href="index.html"> Home </a></li>
-          <li><a href="projects.html"> Projects </a></li>
-          <li><a href="contact.html"> Contact </a></li>
-        </ul>
+
+    <nav class="style-4 p ">
       
-      </div>
-      <div class="menu" id="toggle-button">
-        <img src="./resources/icons8-menu-rounded-48.png">
-      </div>
-    </div>
-    
-
-  </header> 
-
-
-
-
-
-
-
-  <br>
-  <p>Hi! Welcome I am Dinuja I am making an about page with HTML.</p>
-        
+      <ul class="menu-4">
+      </br>
+        <li class="current float-left animated bounce bi bi-house-fill"><a href="index.html" data-hover="Home"> &nbsp Home</a></li>
+        <li class="float-left bi bi-gear-fill"><a href="projects.html" data-hover="Projects"> &nbsp Projects</a></li>
+        <h1>D I N U J A 'S B L O G </h1>
+        <button class=" peep float-right bi bi-envelope-fill "><a href="./contact.html"> &nbsp Contact</a></button>
+      </ul>
+    </nav>
+  
+  </br>
+  </br>        
     <br/>
     <br/>
     <br/>
@@ -55,13 +44,27 @@
   <div class="my-info-cont">
     <img src="./resources/my.jpg">
     <h1>Hello!</h1>
-    <p>Okay. So my full name is S.Dinuja Randula de Silva.<br>I live in Galle, in Sri Lanka
-     And I learn at Richmond College (Picture Below)<br>
-     And I was born in 2009-03-12. And now I'm 13.<br>
-     I mostly like to code or create something. And explore<br>
+    <p>My full name is S.Dinuja Randula de Silva.<br>I live in Galle, in Sri Lanka
+     And I learn at Richmond College<br>
+     And I was born in 2009. And now I'm 13.<br>
+     I mostly like to code or make something. And explore<br>
      about computers. I have a great interest in new OS's and cars! <br>
      My favourite car brand is Tesla. I also have a coding and<br>
      video editing experience. You can see them below.
+    </p>
+  </div>
+
+</br>
+</br>
+</br>
+</br>
+
+  <div class="my-school-cont">
+    <img src='./resources/rcg.jpg'>
+    <h1>Richmond College</h1>
+    <p>This is my school. Its name is Richmond College.</br>
+      This was built in the year 1876. By George Bo</br>
+      Its in Gale in Richmond Hill
     </p>
   </div>
     <br/>
@@ -71,7 +74,7 @@
 
   <div class="wrap">
     <div class="bar">
-      <h3>HTML5 <abbr>90%</abbr></h3>
+      <h3>HTML5 <abbr>85%</abbr></h3>
       <span></span>
     </div>
     <div class="bar">
@@ -94,88 +97,63 @@
 
   <br/>
   <br/>
-  
- <div class="image">
-    <figure>
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4364Y1ZL2By0JrgY2kBZ2zq7LeNWivWUhw&usqp=CAU" alt="RCG">
-      <figcaption>
-        Richmond College 
-      </figcaption>
-    </figure>
-  </div>
+  <br/>
+  <br/>
+  <br>
+  <br>
+  <br>
+ 
+  <button class="back-to-top hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </button>
 
+    <script>
+    const showOnPx = 100;
+    const backToTopButton = document.querySelector(".back-to-top")
 
-  
+    const scrollContainer = () => {
+      return document.documentElement || document.body;
+    };
 
-<br/>
-<br/>
-<br>
-<br>
-<br>
+    document.addEventListener("scroll", () => {
+      if (scrollContainer().scrollTop > showOnPx) {
+        backToTopButton.classList.remove("hidden")
+      } else {
+        backToTopButton.classList.add("hidden")
+      }
+    })
 
+    const goToTop = () => {
+    document.body.scrollIntoView();
+    behavior: "smooth";
+    };
 
-  <p>And here are some of my favourite cars</p>
-  <body>
-    <div class="image">
-      <figure>
-         <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD" alt="Tesla Model S">
-        <figcaption>
-          Tesla Model S
-          <p>
-            This is a Tesla made by the Electric car<br> company Tesla. Tesla is the best selling EV.<br>
-            They sold over 500 000 cars just in the US.<br>This tesla has a Plaid version<br>
-            It accelarates from 0-60mph in 1.98secs<br> (rollout substracted)
-          </p>  
-        </figcaption>
-      </figure>
-    </div>
+    backToTopButton.addEventListener("click", goToTop)
     
-    <div class="image">
-      <figure>
-         <img src="./resources/rr.jpg" alt="Range Rover">
-        <figcaption>
-          Range Rover 
-          <p>
-            <br>Range Rovers or the whole Land Rover industry is known<br>
-            for it's luxury and off-roading capabilities<br>
-            And this is one of the high end versions<br>
-            of It's kind.
-            
-          </p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="image">
-      <figure>
-         <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/8c26f779-11e5-4cfc-bd7c-dcd03b18ff88/bvlatuR/std/4096x2561/Model-X-Main-Hero-Desktop-LHD" alt="Tesla Model X">
-        <figcaption>
-          Tesla Model X
-          <p>
-            <br>This car accelarates from 0-60mph in 2.3secs (rollout substracted)<br>
-            The speciality about this car is that the back doors<br>
-            opens as a falcon spreading it's wings<br>
-            Hence, it's called Falcon Wing Doors.
-          </p>
-        </figcaption>
-      </figure>
-    </div>
-
-
-
-
+  </script>
 
 </body>
 
-<script>
-  const toggleButton = document.getElementById('toggle-button');
-  const naviList = document.getElementById('navi-list');
+  <footer class="footer-distributed">
 
-  toggleButton.addEventListener('click', () => {
-    naviList.classList.toggle('active');
-  })
+    <div class="footer-right">
 
-</script>
+
+      <a href="mailto:dinujadesilva@gmail.com"><i class="bi bi-envelope" target="_blank"></i></a>
+      <a href="https://github.com/scj1?subject=Mail from Dinuja's Blog" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.youtube.com/channel/UCwsSJfU7rsjJhdiW3r3Zqyg target="_blank><i class="bi bi-youtube"></i></a>
+      <a href="https://scratch.mit.edu/studios/30319643" target="_blank"><object data="./resources/scratch.svg" width="20" height="20"></object>
+      </a>
+
+    </div>
+
+    <div class="footer-left">
+      <p><a href="./index.html">Dinuja's Blog</a>  &copy; 2022</p>
+    </div>
+
+  </footer>
 
 
 
